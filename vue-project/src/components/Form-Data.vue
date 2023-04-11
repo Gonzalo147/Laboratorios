@@ -25,6 +25,14 @@
         <p>Description: </p>
         <pv-textArea v-model="textArea" rows="5" cols="30" />
     </div>
+        <div class="container">
+            <p>Status:</p>
+            <div>
+                <pv-button label="Active" icon="pi pi-check" />
+                <pv-button label="Suspended" icon="pi pi-minus" />
+                <pv-button label="Inactive" icon="pi pi-times" />
+            </div>
+        </div>
     <div class="container-g">
     </div>
 </template>
