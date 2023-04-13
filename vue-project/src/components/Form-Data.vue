@@ -1,6 +1,6 @@
 <template>
     <div class="container">
-        <label>{{ $t('Code::') }} {{name}}</label>
+        <label>{{ $t('Code:') }} {{name}}</label>
         <pv-inputMask id="basic" v-model="value" mask="99-999999" placeholder="99-999999"/>
         <pv-button :label="$t('Validate')"  icon="pi pi-check"/>
     </div>
