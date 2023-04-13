@@ -1,12 +1,16 @@
 <template>
-    <div class="container">
-      <div class="my-class">My component {{name}} {{title}}</div>
-        <input type="text" @input="handleChange" >
-        <pv-inputText type="text"/>
-        <input type="button" @click="handleClick(3)" value="Click me !">
-        <pv-button label="Click me !"  icon="pi pi-check" severity="danger"/>
+    <div class="flex flex-column m-1 gap-3 container bg-green-100">
+        <div class="flex align-items-center justify-content-center">{{ $t('MyComponent')}} {{name}} {{title}}</div>
+        <input class="flex align-items-center justify-content-center" type="text" @input="handleChange" >
+        <pv-inputText type="text" class="flex align-items-center justify-content-center"  />
+
+        <img src="gatos" alt="gato">
+        <label for="name" >Name:</label>
+        <input id="name" type="button" @click="handleClick(3)" value="Click me !" class="flex align-items-center justify-content-center">
+        <pv-button :label="$t('ClickMe')"  icon="pi pi-check" severity="danger" class="flex align-items-center justify-content-center"/>
     </div>
 </template>
+
 
 <script>
 export default {
@@ -37,7 +41,6 @@ export default {
 </script>
 
 <style scoped>
-
 .my-class{
     background-color: red;
     margin-top: 10px;
@@ -45,17 +48,10 @@ export default {
     font-size: large;
     padding: 9px;
 }
-
 .container {
-    display: flex;
-    gap:10px;
-    flex-direction: column;
-    align-items: center;
     padding: 10px;
     border: #282828 solid;
 }
-
-
 .containerGrid {
     display: Grid;
     grid-template-columns:1fr 1fr;

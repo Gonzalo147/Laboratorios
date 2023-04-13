@@ -19,10 +19,12 @@ import Calendar from 'primevue/calendar';
 import InputNumber from 'primevue/inputnumber';
 import Textarea from 'primevue/textarea';
 import Checkbox from 'primevue/checkbox';
+import i18n from'../src/locales/i18n'
 
 
 const app = createApp(App);
 
+app.use(i18n);
 app.use(PrimeVue);
 
 
@@ -34,4 +36,5 @@ app.component('pv-multiSelect', MultiSelect);
 app.component('pv-calendar', Calendar);
 app.component('pv-textArea', Textarea);
 app.component('pv-checkBox', Checkbox);
+
 app.mount('#app')
