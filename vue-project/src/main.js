@@ -21,7 +21,6 @@ import Textarea from 'primevue/textarea';
 import Checkbox from 'primevue/checkbox';
 import i18n from'../src/locales/i18n'
 
-
 const app = createApp(App);
 
 app.use(i18n);

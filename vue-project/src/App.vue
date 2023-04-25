@@ -3,11 +3,12 @@
     import ListComponent from "@/components/list-component.vue";
     import FormData from './components/Form-Data.vue';
     import Header from './components/Header.vue';
+    import etcCompo from "@/components/etcCompo.vue";
 </script>
 
 <template>
   <div>
-      <FormData/>
+      <etcCompo></etcCompo>
   </div>
 </template>
 
